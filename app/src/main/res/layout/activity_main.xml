@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="56dp"
+         android:layout_width="match_parent"
+         android:paddingEnd="8dp"
+         android:background="#121214"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:paddingStart="8dp">
+
+        <TextView
+             android:layout_height="48dp"
+             android:layout_width="48dp"
+             android:gravity="center"
+             android:textSize="24sp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/btnBack"
+             android:text="←" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:textSize="18sp"
+             android:textColor="#FFFFFF"
+             android:paddingStart="8dp"
+             android:layout_weight="1"
+             android:id="@+id/tvTitle"
+             android:text="New Project" />
+
+        <TextView
+             android:layout_height="48dp"
+             android:layout_width="48dp"
+             android:gravity="center"
+             android:textSize="24sp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/btnSettings"
+             android:text="⚙" />
+
+        <TextView
+             android:layout_height="48dp"
+             android:layout_width="48dp"
+             android:gravity="center"
+             android:textSize="24sp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/btnExport"
+             android:text="⤴" />
+
+    </LinearLayout>
+
+    <FrameLayout
+         android:layout_height="220dp"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="16dp"
+         android:background="#D2B0FF"
+         android:layout_marginTop="16dp"
+         android:id="@+id/previewHolder">
+
+    </FrameLayout>
+
+    <LinearLayout
+         android:layout_height="52dp"
+         android:layout_width="match_parent"
+         android:background="#121214"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             style="@style/ToolBtn"
+             android:id="@+id/btnUndo"
+             android:text="↶" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:alpha="0.4"
+             style="@style/ToolBtn"
+             android:id="@+id/btnRedo"
+             android:text="↷" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             style="@style/ToolBtn"
+             android:id="@+id/btnStart"
+             android:text="⏮" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             style="@style/ToolBtn"
+             android:id="@+id/btnPlay"
+             android:text="▶" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             style="@style/ToolBtn"
+             android:id="@+id/btnEnd"
+             android:text="⏭" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="14sp"
+             style="@style/ToolBtn"
+             android:id="@+id/btnRatio"
+             android:text="16:9" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             style="@style/ToolBtn"
+             android:id="@+id/btnFull"
+             android:text="⛶" />
+
+    </LinearLayout>
+
+    <ScrollView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:paddingTop="12dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:id="@+id/layerList">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+         android:layout_height="64dp"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:layout_margin="24dp"
+         android:textSize="36sp"
+         android:textColor="#000000"
+         android:id="@+id/btnAdd"
+         android:text="+" />
+
+</LinearLayout>
